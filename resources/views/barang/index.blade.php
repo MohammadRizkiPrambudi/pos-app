@@ -7,10 +7,10 @@
         <div class="card bg-base-100 shadow-md">
             <div class="card-body">
                 <div class="flex justify-between items-center mb-4">
-                    <h1 class="text-2xl font-bold">Daftar Barang</h1>
-                    <a href="{{ url('/barang/create') }}" class="btn btn-primary flex items-center gap-2">
-                        <i data-lucide="plus"></i> Tambah Barang
-                    </a>
+                    <h2 class="text-lg font-bold">Daftar Barang</h1>
+                        <a href="{{ url('/barang/create') }}" class="btn btn-primary flex items-center gap-2">
+                            <i data-lucide="plus"></i> Tambah Barang
+                        </a>
                 </div>
 
                 {{-- Table Responsive --}}

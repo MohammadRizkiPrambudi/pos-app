@@ -31,7 +31,7 @@
             </a>
 
             {{-- Menu Riwayat --}}
-            <a href="{{ url('/riwayat') }}"
+            <a href="{{ url('/riwayat-transaksi') }}"
                 class="card bg-base-100 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all p-6 flex flex-col items-center">
                 <div class="rounded-full p-3 bg-warning/10 mb-4">
                     <i data-lucide="clock" class="w-10 h-10 text-warning"></i>

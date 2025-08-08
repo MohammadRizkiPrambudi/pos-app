@@ -39,7 +39,8 @@
                             <ul class="bg-base-100 rounded-t-none p-2">
                                 <li><a href="{{ url('/kasir') }}"><i data-lucide="credit-card" class="w-4 h-4"></i>
                                         Kasir</a></li>
-                                <li><a href="{{ url('/riwayat') }}"><i data-lucide="clock" class="w-4 h-4"></i>
+                                <li><a href="{{ url('/riwayat-transaksi') }}"><i data-lucide="clock"
+                                            class="w-4 h-4"></i>
                                         Riwayat</a></li>
                             </ul>
                         </details>
@@ -56,7 +57,8 @@
                     <li><a href="{{ url('/') }}"><i data-lucide="home" class="w-4 h-4"></i> Home</a></li>
                     <li><a href="{{ url('/barang') }}"><i data-lucide="package" class="w-4 h-4"></i> Barang</a></li>
                     <li><a href="{{ url('/kasir') }}"><i data-lucide="credit-card" class="w-4 h-4"></i> Kasir</a></li>
-                    <li><a href="{{ url('/riwayat') }}"><i data-lucide="clock" class="w-4 h-4"></i> Riwayat</a></li>
+                    <li><a href="{{ url('/riwayat-transaksi') }}"><i data-lucide="clock" class="w-4 h-4"></i>
+                            Riwayat</a></li>
                 </ul>
             </div>
         </div>
