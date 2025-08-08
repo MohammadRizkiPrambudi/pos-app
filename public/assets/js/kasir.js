@@ -4,13 +4,16 @@ let keranjang = [];
 
 function tambahBarang() {
     let kode = document.getElementById("kode_barang").value.trim();
-    if (!kode) return alert("Masukkan kode barang");
+    if (!kode) {
+        showKasirAlert("Masukkan kode barang", "error");
+        return;
+    }
 
     fetch(`/api/barang/${kode}`)
         .then((res) => res.json())
         .then((data) => {
             if (data.message !== "success") {
-                alert("Barang tidak ditemukan");
+                showKasirAlert("Barang tidak ditemukan", "error");
                 return;
             }
 
@@ -80,3 +83,23 @@ setTimeout(() => {
     const alert = document.getElementById("alert");
     if (alert) alert.remove();
 }, 3000);
+
+function showKasirAlert(message, type = "success") {
+    const alertBox = document.getElementById("kasir-alert");
+    let icon = type === "success" ? "check-circle" : "x-circle";
+    let alertClass = type === "success" ? "alert-success" : "alert-error";
+
+    alertBox.className = `alert ${alertClass} flex items-center gap-2`;
+    alertBox.innerHTML = `
+        <i data-lucide="${icon}" class="w-5 h-5"></i>
+        <span>${message}</span>
+    `;
+    alertBox.classList.remove("hidden");
+
+    lucide.createIcons();
+
+    // Hilang otomatis setelah 3 detik
+    setTimeout(() => {
+        alertBox.classList.add("hidden");
+    }, 3000);
+}

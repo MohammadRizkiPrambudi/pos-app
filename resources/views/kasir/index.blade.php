@@ -24,6 +24,8 @@
                     </div>
                 @endif
 
+                <div id="kasir-alert" class="hidden mb-4"></div>
+
                 {{-- Input Kode Barang --}}
                 <div class="flex gap-2 mb-4">
                     <input type="text" id="kode_barang" placeholder="Contoh: BRG001" class="input input-bordered flex-1"
