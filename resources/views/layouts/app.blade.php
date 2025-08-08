@@ -23,7 +23,7 @@
 
 <body>
     {{-- Navbar --}}
-    <div class="navbar bg-base-100 shadow-md">
+    <div class="navbar bg-base-100 shadow-md fixed top-0 left-0 right-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
             <a href="{{ url('/') }}" class="btn btn-ghost text-xl flex items-center gap-2">
                 <i data-lucide="shopping-bag"></i>
@@ -65,7 +65,7 @@
     </div>
 
     {{-- Konten Halaman --}}
-    <main class="p-4">
+    <main class="p-4 mt-15">
         @yield('content')
     </main>
 

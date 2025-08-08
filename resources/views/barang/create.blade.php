@@ -3,7 +3,7 @@
 @section('title', 'Tambah Barang')
 
 @section('content')
-    <div class="max-w-2xl mx-auto mt-12">
+    <div class="max-w-2xl mx-auto mt-10">
         <div class="card bg-base-100 shadow-md">
             <div class="card-body">
                 <h2 class="card-title text-lg mb-4"><i data-lucide="plus-circle" class="w-5 h-5"></i> Tambah Barang</h2>
@@ -15,8 +15,11 @@
                         <label class="floating-label">
                             <span>Kode Barang</span>
                             <input type="text" name="kode_barang" placeholder="Masukkan Kode Barang"
-                                value="{{ old('kode_barang') }}" readonly required class="input input-md w-full">
+                                value="{{ old('kode_barang') }}" required class="input input-md w-full">
                         </label>
+                        @error('kode_barang')
+                            <span class="text-red-500 text-sm mt-1">{{ $message }}</span>
+                        @enderror
                     </div>
 
                     {{-- Nama Barang --}}
@@ -26,6 +29,9 @@
                             <input type="text" name="nama_barang" placeholder="Masukkan Nama Barang"
                                 value="{{ old('nama_barang') }}" required class="input input-md w-full">
                         </label>
+                        @error('nama_barang')
+                            <span class="text-red-500 text-sm mt-1">{{ $message }}</span>
+                        @enderror
                     </div>
 
                     {{-- Harga --}}
@@ -35,6 +41,9 @@
                             <input type="number" name="harga" placeholder="Masukkan harga" value="{{ old('harga') }}"
                                 required class="input input-md w-full">
                         </label>
+                        @error('harga')
+                            <span class="text-red-500 text-sm mt-1">{{ $message }}</span>
+                        @enderror
                     </div>
 
                     {{-- Tombol --}}

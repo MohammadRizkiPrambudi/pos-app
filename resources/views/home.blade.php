@@ -17,7 +17,7 @@
                     <i data-lucide="package" class="w-10 h-10 text-primary"></i>
                 </div>
                 <h2 class="text-xl font-semibold">Barang</h2>
-                <p class="text-sm mt-2 text-center text-gray-500">Kelola data barang dan stok.</p>
+                <p class="text-sm mt-2 text-center text-gray-500">Kelola data barang.</p>
             </a>
 
             {{-- Menu Kasir --}}
