@@ -14,7 +14,7 @@ Aplikasi kasir sederhana berbasis **Laravel**, menggunakan **Tailwind CSS**, **D
 
 ## Instalasi
 
-Pastikan sudah menginstal **PHP ≥ 8.1**, **Composer**, dan **Node.js**.
+Pastikan sudah menginstal **Web Server** dan **Composer**.
 
 ```bash
 # 1. Clone repositori
