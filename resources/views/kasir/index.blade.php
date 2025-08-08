@@ -3,7 +3,7 @@
 @section('title', 'Kasir POS')
 
 @section('content')
-    <div class="max-w-6xl mx-auto mt-10">
+    <div class="max-w-5xl mx-auto mt-10">
         <div class="card bg-base-100 shadow-md">
             <div class="card-body">
                 <h2 class="card-title text-lg mb-4 flex items-center gap-2">

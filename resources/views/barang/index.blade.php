@@ -3,7 +3,7 @@
 @section('title', 'Daftar Barang')
 
 @section('content')
-    <div class="max-w-6xl mx-auto mt-12">
+    <div class="max-w-5xl mx-auto mt-9">
         <div class="card bg-base-100 shadow-md">
             <div class="card-body">
                 <div class="flex justify-between items-center mb-4">
